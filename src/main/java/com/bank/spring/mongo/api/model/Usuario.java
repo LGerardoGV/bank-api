@@ -28,6 +28,24 @@ public class Usuario {
 	private String curp;
 	private boolean status;
 	
+	public Usuario(String id, String nombre, String apePaterno, String apeMaterno, String domicilio, String rfc, String actEconomica, int edad, String sexo, String sueldoMensual, String curp, boolean status) {
+		
+		this.id = id;
+		this.nombre = nombre;
+		this.apePaterno = apePaterno;
+		this.apeMaterno = apeMaterno;
+		this.domicilio = domicilio;
+		this.rfc = rfc;
+		this.actEconomica = actEconomica;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.sueldoMensual = sueldoMensual;
+		this.curp = curp;
+		this.status = status;
+		
+	}
+
+	
 	public String getId() {
 		return id;
 	}

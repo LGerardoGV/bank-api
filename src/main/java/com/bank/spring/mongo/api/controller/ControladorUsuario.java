@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bank.spring.mongo.api.model.Usuario;
-import com.bank.spring.mongo.api.respository.RepositorioUsuario;
+import com.bank.spring.mongo.api.repository.RepositorioUsuario;
 
 @RestController
 public class ControladorUsuario {
@@ -22,7 +22,7 @@ public class ControladorUsuario {
 	@PostMapping("/addUser")
 	public String saveUsuario(@RequestBody Usuario usuario) {
 		repository.save(usuario);
-		return "Se agrego usuario con id: "+usuario.getId();
+		return "Se agrego usuariio con id: "+usuario.getId();
 	}
 	
 	@GetMapping("/allUsers")
